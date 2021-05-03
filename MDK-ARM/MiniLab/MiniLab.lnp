@@ -1,0 +1,24 @@
+--cpu Cortex-M0
+"minilab\startup_stm32f072xb.o"
+"minilab\main.o"
+"minilab\stm32f0xx_it.o"
+"minilab\stm32f0xx_hal_msp.o"
+"minilab\stm32f0xx_hal_tim.o"
+"minilab\stm32f0xx_hal_tim_ex.o"
+"minilab\stm32f0xx_hal_rcc.o"
+"minilab\stm32f0xx_hal_rcc_ex.o"
+"minilab\stm32f0xx_hal.o"
+"minilab\stm32f0xx_hal_i2c.o"
+"minilab\stm32f0xx_hal_i2c_ex.o"
+"minilab\stm32f0xx_hal_gpio.o"
+"minilab\stm32f0xx_hal_dma.o"
+"minilab\stm32f0xx_hal_cortex.o"
+"minilab\stm32f0xx_hal_pwr.o"
+"minilab\stm32f0xx_hal_pwr_ex.o"
+"minilab\stm32f0xx_hal_flash.o"
+"minilab\stm32f0xx_hal_flash_ex.o"
+"minilab\system_stm32f0xx.o"
+--library_type=microlib --strict --scatter "MiniLab\MiniLab.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "MiniLab.map" -o MiniLab\MiniLab.axf
